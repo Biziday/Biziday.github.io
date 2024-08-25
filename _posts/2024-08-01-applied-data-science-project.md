@@ -5,35 +5,32 @@ title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
 ## Project Background
-Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
-
-Business Goal :
-Empowering married couples with predictive insights into HDB resale prices to best prepare them in decision-making and strategic planning.
-Project Background
 The project's primary objective is to empower married couples in Singapore by providing predictive insights into HDB resale prices. This would enable them to make informed decisions and strategic plans concerning their property investments, considering the continuously rising costs of HDB flats.
 
 ## Work Accomplished
-Document your work done to accomplish the outcome
+Document work done to accomplish the outcome
 
 ### Data Preparation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Random Forest
+Data Cleaning and Transformation: The dataset was cleaned by handling missing values, such as dropping the 'remaining_lease' column due to missing data. Additional features were engineered from existing columns, including extracting 'year' from the 'month' column and defining price categories (low, medium, high).
+Normalization: Numerical features were standardized to prepare them for modeling, ensuring they were on a comparable scale for the Random Forest Classifier.
 
 ### Modelling
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Random Forest Classifier was chosen to classify HDB flats into three price categories (low, medium, high). The model was trained using the training data, with hyperparameters tuned to improve performance.
+The model's performance was assessed using a classification report and accuracy scores, demonstrating its ability to categorize flats effectively based on the pre-defined criteria.
 
 ### Evaluation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Random Forest
+The Random Forest model was evaluated based on its classification accuracy and its ability to provide clear predictions on HDB resale price categories. The evaluation metrics indicated a high level of accuracy and reliability in predictions.
 
 ## Recommendation and Analysis
-Explain the analysis and recommendations
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Recommendations for married couples based on the model's findings.
+Affordability Assessment: Couples can use the model to determine which HDB flats fall into low, medium, or high price categories based on their budget.
+Location Considerations: Analysis of average resale prices in different towns helps identify more affordable areas.
+Flat Type Analysis: Evaluation of different flat types to find the best fit for budget and needs, with smaller flats often being more affordable.
 
 ## AI Ethics
-Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
+Ethical considerations would include ensuring unbiased predictions, protecting user data privacy, and maintaining transparency in model usage and recommendations.
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
 https://github.com/Biziday/itd214_project
